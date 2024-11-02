@@ -1,23 +1,184 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
 
+<head>
+  <meta charset="utf-8" />
+  <!-- Change the title below -->
+  <title>News Site</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- dont forget the meta tag for responsiveness -->
+</head>
+
+<body>
+  <header>
+    <!-- Logo, toggle menu -->
+    <div class="top-imgs">
+      <img class="toggle-menu" src="assets/three-line.jpg" alt="toggle menu" />
+
+      <img id="logo" src="assets/logo-img.jpg" alt="a news station logo" />
+      <img id="logo" src="assets/logo-text.jpg" alt="a logo saying Local news" />
+    </div>
+
+    <!--Search bar-->
+
+    <div class="header-search">
+      <form>
+        <input class="search-bar" placeholder="Search.." name="search">
+        <button class="search-button">Search</button>
+      </form>
+    </div>
+
+  </header>
+
+  <!--Navigation bar-->
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Politics</li>
+      <li>Sports</li>
+      <li>Business</li>
+      <li>Culture</li>
+      <li>Opinion</li>
+      <li>Weather</li>
+    </ul>
+  </nav>
+
+
+  <main id="main-content">
+
+    <!--The main content-->
+
+
+    <!-- The big news content and live-feed-->
     <section class="big-news">
-      <!-- The big news content -->
+
+      <div class="big-news">
+        <img src="" alt="" />
+        <h1>Big news!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
+    <section class="live">
+      <div class="first-live">
+        <p class="live-news">15:00
+        <h5>Local Town</h5>
+        <h3>Description of what happened.</h3>
+        </p>
+      </div>
+
+      <div class="second-live">
+        <p class="live-news">15:00
+        <h5>Local Town</h5>
+        <h3>Description of what happened.</h3>
+        </p>
+      </div>
+
+      <div class="third-live">
+        <p class="live-news">15:00
+        <h5>Local Town</h5>
+        <h3>Description of what happened.</h3>
+        </p>
+      </div>
+
+      <div class="fourth-live">
+        <p class="live-news">15:00
+        <h5>Local Town</h5>
+        <h3>Description of what happened.</h3>
+        </p>
+      </div>
+
+      <div class="fifth-live">
+        <p class="live-news">15:00
+        <h5>Local Town</h5>
+        <h3>Description of what happened.</h3>
+        </p>
+      </div>
     </section>
-  </body>
+
+
+
+    <section class="second-row">
+      <!-- The other news  -->
+      <div class="second-left">
+        <img src="" alt="first smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="second-right">
+        <img src="" alt="second smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </section>
+
+    <!--Third row of articles-->
+    <section class="third-row">
+      <div class="third-left">
+        <img src="" alt="third smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+      <div class="third-right-wider">
+        <img src="" alt="fourth smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </section>
+
+    <!--Fouth row of articles-->
+    <section class="fourth-row">
+      <div class="fourth-left">
+        <img src="" alt="fifth smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+      <div class="fourth-mid">
+        <img src="" alt="sixth-smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+      <div class="fourth-right">
+        <img src="" alt="seventh smaller article" />
+        <h1>This just in</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <ul>
+      <li>Home</li>
+      <li>Politics</li>
+      <li>Sports</li>
+      <li>Business</li>
+      <li>Culture</li>
+      <li>Opinion</li>
+      <li>Weather</li>
+      <li>Home</li>
+      <li>Politics</li>
+      <li>Sports</li>
+      <li>Business</li>
+      <li>Culture</li>
+      <li>Opinion</li>
+      <li>Weather</li>
+    </ul>
+
+    <div class="footer-info">
+      <h3>About us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+
+    <div class="tips">
+      <h3>Tip us.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <button>Share your tip</button>
+    </div>
+  </footer>
+</body>
+
 </html>

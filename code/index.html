@@ -13,7 +13,20 @@
   <header>
     <!-- Logo, toggle menu -->
     <div class="top-imgs">
-      <img class="toggle-menu" src="assets/three-line.jpg" alt="toggle menu" />
+
+      <div class="dropdown">
+        <a href=""><img class="toggle-menu" src="assets/three-line.jpg" alt="toggle menu" /></a>
+
+        <div class="hidden-links">
+          <p><a href="#">Login</a></p>
+          <p><a href="#">Subscribe</a></p>
+          <p><a href="#">Support</a></p>
+        </div>
+
+      </div>
+
+
+
 
       <img id="logo" src="assets/logo-img.jpg" alt="a news station logo" />
       <img id="logo" src="assets/logo-text.jpg" alt="a logo saying Local news" />
@@ -55,13 +68,15 @@
       <div class="big-news">
         <img src="assets/pumpkin.jpg" alt="" />
         <h1>Local Pumpkin Carving competition decided!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Hundreds of contributions have been evaluated, and the winners of several categories have finally been chosen
+          in the yearly pumpkin contest.</p>
       </div>
+      <div class="border-line"></div>
     </section>
 
     <section class="live">
       <div class="first-live">
-        <p class="live-news">15:00</p>
+        <p class="live-news">15:20</p>
         <h5>Local Town</h5>
         <h3>Description of what happened.</h3>
         <div class="border-line"></div>
@@ -75,21 +90,21 @@
       </div>
 
       <div class="first-live">
-        <p class="live-news">15:00</p>
+        <p class="live-news">12:30</p>
         <h5>Local Town</h5>
         <h3>Description of what happened.</h3>
         <div class="border-line"></div>
       </div>
 
       <div class="first-live">
-        <p class="live-news">15:00</p>
+        <p class="live-news">11:15</p>
         <h5>Local Town</h5>
         <h3>Description of what happened.</h3>
         <div class="border-line"></div>
       </div>
 
       <div class="first-live">
-        <p class="live-news">15:00</p>
+        <p class="live-news">11:05:00</p>
         <h5>Local Town</h5>
         <h3>Description of what happened.</h3>
         <div class="border-line"></div>
@@ -100,7 +115,7 @@
     <!--NEWS CONTINUE-->
 
     <section class="second-row">
-      <!-- The other news  -->
+      <!-- The second row of news  -->
       <div class="second-left">
         <img src="assets/hockey.jpg" alt="first smaller article" />
         <h1>Season starts for the local hockey team.</h1>
@@ -109,43 +124,58 @@
       </div>
       <div class="second-right">
         <img src="assets/scouts.jpg" alt="second smaller article" />
-        <h1>This just in</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <h1>Always prepared!</h1>
+        <p class="quote">"We learn things like cutting vegetables and climb in trees. And we had to guess what was
+          hiding in the box."
+        </p>
+        <p>Liam and his friends learn valuable life skills in fun ways through scouting
+        </p>
       </div>
     </section>
 
+
     <!--Third row of articles-->
     <section class="third-row">
+      <div class="border-line"></div>
+
       <div class="third-left">
         <img src="assets/preschool.jpg" alt="third smaller article" />
-        <h1>This just in</h1>
+        <h1>Best kids preschool made an autumn art exhibit</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
       <div class="third-right-wider">
         <img src="assets/recipe.jpg" alt="fourth smaller article" />
-        <h1>This just in</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <h1>Recipes for all of autumns parties and stay in evening.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
       </div>
     </section>
 
     <!--Fouth row of articles-->
     <section class="fourth-row">
-      <div class="fourth-left">
-        <img src="" alt="fifth smaller article" />
-        <h1>This just in</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+      <div class="border-line"></div>
+
+      <div class="fourth">
+        <img src="assets/yoga.jpg" alt="fifth smaller article" />
+        <h1>Conclusive results</h1>
+        <p>Studies show that practicing yoga can improve muscular strength and flexibility, reduce stress, depression,
+          and anxiety, and enhance several bodily functions.</p>
       </div>
 
-      <div class="fourth-mid">
-        <img src="" alt="sixth-smaller article" />
-        <h1>This just in</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="fourth">
+        <img src="assets/running.jpg" alt="sixth-smaller article" />
+        <h1>What physical exersive does for our children</h1>
+        <p>Getting into good habits at a young age gives immidiate and long term benefits for us. It improves children's
+          wellbeing and their academic achievements.</p>
       </div>
 
-      <div class="fourth-right">
-        <img src="" alt="seventh smaller article" />
-        <h1>This just in</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="fourth">
+        <img src="assets/swimming.jpg" alt="seventh smaller article" />
+        <h1>New junior champion</h1>
+        <p class="quote">"Not in a million years did I think I would come out as the winner."</p>
+        <p>A clearly emotional and overwhelmed gold medalist explains after an extraordinary race.</p>
       </div>
 
     </section>
@@ -153,33 +183,62 @@
   </main>
 
   <footer>
-    <ul>
-      <li>Home</li>
-      <li>Politics</li>
-      <li>Sports</li>
-      <li>Business</li>
-      <li>Culture</li>
-      <li>Opinion</li>
-      <li>Weather</li>
-      <li>Home</li>
-      <li>Politics</li>
-      <li>Sports</li>
-      <li>Business</li>
-      <li>Culture</li>
-      <li>Opinion</li>
-      <li>Weather</li>
-    </ul>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links2">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Politics</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Opinion</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </div>
 
     <div class="footer-info">
-      <h3>About us</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="info-text">
+        <h3>About us</h3>
+        <p>Local News newspaper was founded by Linda Olsson in 2024 and is a completely made up newspaper. It's main
+          function is to serve as an exercise in grid and flex-box, and to make me as a programmer plan and execute the
+          design and layout of a newspaper website.</p>
+      </div>
+      <div class="info-img">
+        <img src="assets/linda-smaller.JPG" alt="The founder, Linda">
+      </div>
     </div>
 
+
+
     <div class="tips">
-      <h3>Tip us.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <button>Share your tip</button>
+      <h3>Tip hotline</h3>
+
+      <p><img src="assets/phone.png" alt="phone" /> 123 - 456 789</p>
+      <p><img src="assets/envelope.png" alt="envelope" /> email@email.email</p>
+      <p><img src="assets/fb.png" alt="facebook" /> Message us on facebook</p>
     </div>
+
+
+
+    <div class="social-media">
+      <a href="#"><img src="assets/fb.png" alt="facebook logo" /></a>
+      <a href="#"><img src="assets/twitter.png" alt="twitter logo" /></a>
+      <a href="#"><img src="assets/instagram.png" alt="instagram logo" /></a>
+    </div>
+    </div>
+
   </footer>
 </body>
 

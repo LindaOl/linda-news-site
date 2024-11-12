@@ -3,42 +3,54 @@
 
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <!-- Change the title below -->
-  <title>News Site</title>
+  <title>Local News</title>
   <link rel="stylesheet" href="./style.css" />
   <!-- dont forget the meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
   <header>
-    <!-- Logo, toggle menu -->
-    <div class="top-imgs">
 
+    <div class="header-left">
       <div class="dropdown">
-        <a href=""><img class="toggle-menu" src="assets/three-line.jpg" alt="toggle menu" /></a>
-
+        <input type="checkbox" id="toggle-1">
+        <label for="toggle-1"><img src="assets/three-line-tight.jpg" /></label>
         <div class="hidden-links">
-          <p><a href="#">Login</a></p>
-          <p><a href="#">Subscribe</a></p>
-          <p><a href="#">Support</a></p>
+          <div class="login">
+            <p><a href="#">Login</a></p>
+            <p><a href="#">Subscribe</a></p>
+            <p><a href="#">Support</a></p>
+          </div>
+          <div class="login">
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Politics</a></p>
+            <p><a href="#">Sports</a></p>
+            <p><a href="#">Business</a></p>
+            <p><a href="#">Culture</a></p>
+            <p><a href="#">Opinion</a></p>
+            <p><a href="#">Weather</a></p>
+          </div>
         </div>
-
       </div>
-
-
-
-
-      <img id="logo" src="assets/logo-img.jpg" alt="a news station logo" />
-      <img id="logo" src="assets/logo-text.jpg" alt="a logo saying Local news" />
+      <img id="logo" src="assets/thelogo.jpg" alt="a news station logo" />
     </div>
 
-    <!--Search bar-->
-
-    <div class="header-search">
-      <form>
-        <input class="search-bar" placeholder="Search.." name="search">
-        <button class="search-button">Search</button>
-      </form>
+    <div class="header-right">
+      <div class="search-header">
+        <form class="search-form">
+          <input class="search-bar" placeholder="Search.." name="search">
+          <button class="search-button">Search</button>
+        </form>
+      </div>
     </div>
 
   </header>
@@ -56,224 +68,345 @@
     </ul>
   </nav>
 
+  <!--The main content-->
+  <main>
 
-  <main id="main-content">
-
-    <!--The main content-->
-
-
-    <!-- The big news content and live-feed-->
-
-
-    <section class="big-news">
-
+    <!--Big news-->
+    <div class="outer-big-news">
       <div class="scroll">
-        <div>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-          <span>EXTRA</span>
-
-        </div>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
       </div>
-      <div class="big-news2">
-        <a href="#"><img src="assets/pumpkin.jpg" alt="" />
+      <div class="scroll scroll2">
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+        <span>EXTRA</span>
+      </div>
+
+      <div class="big-news">
+        <a href=""><img src="assets/pumpkin.jpg" alt="a jack-o-latern">
           <h1>Local Pumpkin Carving competition decided!</h1>
         </a>
-        <p>Hundreds of contributions have been evaluated, and the winners of several categories have finally been chosen
-          in the yearly pumpkin contest.</p>
+        <p>Hundreds of contributions have been evaluated, and the winners of several categories have finally
+          been chosen in the yearly pumpkin contest.
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
       </div>
-      <div class="border-line"></div>
-    </section>
+    </div>
 
+    <!-- Live feed -->
     <section class="live">
       <div class="first-live">
-        <p class="live-news"><img src="assets/button-nobg.png" />15:20</p>
-        <h5>Local Town</h5>
-        <h3>Description of what happened.</h3>
-        <div class="border-line"></div>
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">15:20</p>
+          <h5>Traffic</h5>
+        </div>
+        <a href="#">
+          <h3>Accident makes traffic slow on E6.</h3>
+        </a>
       </div>
 
-      <div class="first-live">
-        <p class="live-news"><img src="assets/button-nobg.png" />15:00</p>
-        <h5>Local Town</h5>
-        <h3>Description of what happened.</h3>
-        <div class="border-line"></div>
-      </div>
 
       <div class="first-live">
-        <p class="live-news"><img src="assets/button-nobg.png" />12:30</p>
-        <h5>Local Town</h5>
-        <h3>Description of what happened.</h3>
-        <div class="border-line"></div>
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">15:00</p>
+          <h5>Art</h5>
+        </div>
+        <a href="#">
+          <h3>Local schools invites all to an art exhibit.</h3>
+        </a>
       </div>
 
-      <div class="first-live">
-        <p class="live-news"><img src="assets/button-nobg.png" />11:15</p>
-        <h5>Local Town</h5>
-        <h3>Description of what happened.</h3>
-        <div class="border-line"></div>
-      </div>
 
       <div class="first-live">
-        <p class="live-news"><img src="assets/button-nobg.png" />11:05:00</p>
-        <h5>Local Town</h5>
-        <h3>Description of what happened.</h3>
-        <div class="border-line"></div>
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">12:30</p>
+          <h5>Sports</h5>
+        </div>
+        <a href="#">
+          <h3>New junior champion in swimming.</h3>
+        </a>
       </div>
+
+
+      <div class="first-live">
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">11:15</p>
+          <h5>Weather</h5>
+        </div>
+        <a href="#">
+          <h3>Class 1 wind will hit tomorrow afternoon.</h3>
+        </a>
+      </div>
+
+
+      <div class="first-live">
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">11:05</p>
+          <h5>Politics</h5>
+        </div>
+        <a href="#">
+          <h3>Politician stepping down after twitter messages.</h3>
+        </a>
+      </div>
+
+
+      <div class="first-live">
+        <div class="first-line">
+          <img src="assets/button-nobg.png" alt="red button" />
+          <p class="live-news">10:30</p>
+          <h5>Sports</h5>
+        </div>
+        <a href="#">
+          <h3>Signups are now open for the hockey youth team.</h3>
+        </a>
+      </div>
+
 
     </section>
 
     <!--NEWS CONTINUE-->
-
     <section class="second-row">
-      <!-- The second row of news  -->
       <div class="second-left">
-        <a href="#"><img src="assets/hockey.jpg" alt="first smaller article" />
-          <h1>Season starts for the local hockey team.</h1>
+        <a href="#"><img src="assets/hockey.jpg" alt="A child in hockey gear on the ice" />
+          <h1>Season starts off for the local hockey team</h1>
         </a>
-        <p>The season has finally kicked off and the local kids are eager to put their scates on. This year will be the
-          most exciting yet!</p>
+        <p>The season has finally kicked off and the local kids are eager to put their scates on. This year will
+          be the
+          most exciting yet!
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
       </div>
+
       <div class="second-right">
-        <a href="#"><img src="assets/scouts.jpg" alt="second smaller article" />
+        <a href="#"><img src="assets/scouts.jpg" alt="A boy and a scout leader" />
           <h1>Always prepared!</h1>
         </a>
-        <p class="quote">"We learn things like cutting vegetables and climb in trees. And we had to guess what was
+        <p class="quote">
+          "We learn things like cutting vegetables and climb in trees. And we had to guess what was
           hiding in the box."
         </p>
-        <p>Liam and his friends learn valuable life skills in fun ways through scouting
+        <p>Tom and his friends learn valuable life skills in fun ways through scouting
         </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
       </div>
     </section>
-
 
     <!--Third row of articles-->
     <section class="third-row">
-      <div class="border-line"></div>
-
       <div class="third-left">
-        <a href="#"><img src="assets/preschool.jpg" alt="third smaller article" />
+        <a href="#"><img src="assets/preschool.jpg" alt="Drawing and some text from a preschools documentation" />
           <h1>Best kids preschool made an autumn art exhibit</h1>
         </a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </div>
-      <div class="third-right-wider">
-        <a href="#"><img src="assets/recipe.jpg" alt="fourth smaller article" />
-          <h1>Recipes for all of autumns parties and stay in evening.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><a href="#">
+          <p>Read more</p>
         </a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.</p>
+      </div>
+
+      <div class="third-right-wider">
+        <a href="#"><img src="assets/recipe.jpg" alt="Food" />
+          <h1>Recipes for all of autumns parties and stay in evenings</h1>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore
+          magna aliqua.</p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
       </div>
     </section>
 
-    <!--Fouth row of articles-->
     <section class="fourth-row">
-
-      <div class="border-line"></div>
-
       <div class="fourth">
-        <a href="#"><img src="assets/yoga.jpg" alt="fifth smaller article" />
+        <a href="#"><img src="assets/yoga.jpg" alt="A group yoga session" />
           <h1>Conclusive results</h1>
         </a>
-        <p>Studies show that practicing yoga can improve muscular strength and flexibility, reduce stress, depression,
+        <p>Studies show that practicing yoga can improve muscular strength and flexibility, reduce stress,
+          depression,
           and anxiety, and enhance several bodily functions.</p>
-      </div>
-
-      <div class="fourth">
-        <a href="#"><img src="assets/running.jpg" alt="sixth-smaller article" />
-          <h1>What physical exersive does for our children</h1>
+        <a href="#">
+          <p>Read more</p>
         </a>
-        <p>Getting into good habits at a young age gives immidiate and long term benefits for us. It improves children's
-          wellbeing and their academic achievements.</p>
       </div>
 
       <div class="fourth">
-        <a href="#"><img src="assets/swimming.jpg" alt="seventh smaller article" />
+        <a href="#"><img src="assets/running.jpg" alt="children running" />
+          <h1>What physical exercise does for our children</h1>
+        </a>
+        <p>Getting into good habits at a young age gives immidiate and long term benefits for us. It improves
+          children's
+          wellbeing and their academic achievements.</p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
+      </div>
+
+      <div class="fourth">
+        <a href="#"><img src="assets/swimming.jpg" alt="girl swimming" />
           <h1>New junior champion</h1>
         </a>
-        <p class="quote">"Not in a million years did I think I would come out as the winner."</p>
+        <p class="quote">"Not in a million years did I think I would come out as the winner."
+        </p>
         <p>A clearly emotional and overwhelmed gold medalist explains after an extraordinary race.</p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
       </div>
 
     </section>
+
+    <section class="fifth-row">
+      <div class="fifth">
+        <a href="#"><img src="assets/laptop.jpg" alt="a woman with a laptop" />
+          <h1>Is working from home becoming the norm?</h1>
+        </a>
+        <p>More and more businesses offers employees to work from home.
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
+      </div>
+
+      <div class="fifth">
+        <a href="#"><img src="assets/dance.jpg" alt="a man dancing" />
+          <h1>Premiere this weekend!</h1>
+        </a>
+        <p>This saturday the premiere for the local dance group "Urban Breakers" new show can be seen on stage
+          at the cultural center. There are still avaliable tickets.
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
+      </div>
+
+      <div class="fifth">
+        <a href="#"><img src="assets/cat.jpg" alt="Woman with a cat" />
+          <h1>Safely home again after missing for weeks!</h1>
+        </a>
+        <p class="quote">
+          "I'm so thankfull to the man who found him and brought him to the vet."
+        </p>
+        <p>Fred Nielsen was on a hike when he heard noices coming from a pipe and went to check. There he
+          found Sixten who had been missing for weeks.
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
+      </div>
+
+      <div class="fifth">
+        <a href="#"><img src="assets/apple.jpg" alt="apple" />
+          <h1>An apple a day keeps the doctor away</h1>
+        </a>
+        <p>How to prepare for the coming seasons darkness.
+        </p>
+        <a href="#">
+          <p>Read more</p>
+        </a>
+      </div>
+    </section>
+
+    <!--Footer: link list, tip hotline, social media-->
+    <footer>
+      <div class="group-links">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Opinion</a></li>
+            <li><a href="#">Weather</a></li>
+          </ul>
+        </div>
+
+
+        <div class="footer-links2">
+          <ul>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Environment</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="footer-info">
+        <div class="info-text">
+          <h3>About us</h3>
+          <p>Local News website was founded by Linda Olsson in 2024 and is a completely made up website. It's
+            main
+            function is to serve as an exercise in grid and flex-box, and to make me as a programmer plan
+            and
+            execute the
+            design and layout of a news site.</p>
+        </div>
+        <div class="info-img">
+          <img src="assets/linda-smaller.JPG" alt="The founder, Linda" />
+        </div>
+      </div>
+
+
+      <div class="tips">
+        <h3>Tip hotline</h3>
+        <p><img src="assets/phone2.png" alt="phone" /> 123 - 456 789</p>
+        <p><img src="assets/envelope.png" alt="envelope" /> email@email.email</p>
+        <p><img src="assets/fb.png" alt="facebook" /> Message us on facebook</p>
+      </div>
+
+
+      <div class="social-media">
+        <a href="#"><img src="assets/fb.png" alt="facebook logo" /></a>
+        <a href="#"><img src="assets/twitter.png" alt="twitter logo" /></a>
+        <a href="#"><img src="assets/instagram.png" alt="instagram logo" /></a>
+      </div>
+    </footer>
 
   </main>
 
-  <footer>
-
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Opinion</a></li>
-        <li><a href="#">Weather</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-links2">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Politics</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Business</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Opinion</a></li>
-        <li><a href="#">Weather</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-info">
-      <div class="info-text">
-        <h3>About us</h3>
-        <p>Local News newspaper was founded by Linda Olsson in 2024 and is a completely made up newspaper. It's main
-          function is to serve as an exercise in grid and flex-box, and to make me as a programmer plan and execute the
-          design and layout of a newspaper website.</p>
-      </div>
-      <div class="info-img">
-        <img src="assets/linda-smaller.JPG" alt="The founder, Linda">
-      </div>
-    </div>
-
-
-
-    <div class="tips">
-      <h3>Tip hotline</h3>
-
-      <p><img src="assets/phone.png" alt="phone" /> 123 - 456 789</p>
-      <p><img src="assets/envelope.png" alt="envelope" /> email@email.email</p>
-      <p><img src="assets/fb.png" alt="facebook" /> Message us on facebook</p>
-    </div>
-
-
-
-    <div class="social-media">
-      <a href="#"><img src="assets/fb.png" alt="facebook logo" /></a>
-      <a href="#"><img src="assets/twitter.png" alt="twitter logo" /></a>
-      <a href="#"><img src="assets/instagram.png" alt="instagram logo" /></a>
-    </div>
-    </div>
-
-  </footer>
 </body>
 
 </html>

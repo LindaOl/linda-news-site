@@ -1,7 +1,4 @@
 # News Site
-
-Replace this readme with your own information about the project. You can include things like:
-
 - This assigment was to make a new site to practice grid and flex-box. 
 
 ## Approach
@@ -18,8 +15,6 @@ Replace this readme with your own information about the project. You can include
 - Tried out @keyframes for some animations.
 - Had some sizing issues with my search bar, that became very small on high resolution screens
 
-
-
 ## If you had more time, what would be next?
 - work to better the code
 - make everything even more grid based
@@ -27,4 +22,4 @@ Replace this readme with your own information about the project. You can include
 - work on the animated banner that isn't really like I wanted it to be.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+[Website](https://local-news-bootcampsite.netlify.app/)
